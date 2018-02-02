@@ -1,4 +1,7 @@
-    jQuery.fn.highlight = function (pat) {
+// http://johannburkard.de/resources/Johann/jquery.highlight-5.js
+// https://codepen.io/SitePoint/pen/oxOrxM
+
+jQuery.fn.highlight = function (pat) {
         function innerHighlight(node, pat) {
           var skip = 0;
           if (node.nodeType == 3) {
