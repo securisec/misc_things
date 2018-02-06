@@ -60,15 +60,3 @@ $(function () {
         });
         $button.trigger("click.perform");
       });
-
-function populateDropdown() {
-    var headings = $('h1')
-    var select = document.getElementById("ddmenu");
-    for (var i = 0; i < headings.length; i++){
-        var a = document.createElement("a")
-        a.setAttribute("class", "dropdown-item");
-        a.setAttribute("href", "#" + headings[i].id)
-        a.innerHTML = headings[i].innerHTML;
-        select.appendChild(a);
-    }
-}
